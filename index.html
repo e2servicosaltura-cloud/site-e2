@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E2 | Serviços em Altura e Treinamento de Acesso por Cordas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0F172A',     /* Azul Marinho Escuro */
+                            warning: '#EA580C',  /* Laranja Industrial (Segurança) */
+                            light: '#F8FAFC',
+                            greenMenu: '#115E59' /* Verde escuro alinhado com a logo */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-light text-slate-800 font-sans antialiased selection:bg-brand-warning selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 bg-brand-greenMenu/95 backdrop-blur-md shadow-md z-50 border-b border-teal-800">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex items-center gap-7">
+                <img src="logo verde.jpeg" alt="Logo E2 Serviços em Altura & Treinamento" class="h-20 w-auto rounded shadow-sm">
+                <div class="text-2xl font-black tracking-tighter text-white">
+                    Serviço em Altura e<span class="text-xs font-light tracking-normal text-teal-200 block -mt-0"><span class="text-2xl font-black tracking-tighter text-white"> Treinamento</span> 
+                   <span class="text-xs font-light tracking-normal text-teal-200 block -mt-0">Acesso por Cordas</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-teal-100">
+                <a href="#inicio" class="hover:text-brand-warning transition">Início</a>
+                <a href="#servicos" class="hover:text-brand-warning transition">Serviços</a>
+                <a href="#treinamentos" class="hover:text-brand-warning transition">Treinamentos</a>
+                <a href="#Certificações" class="hover:text-brand-warning transition">Certificações</a>
+                <a href="#contato" class="hover:text-brand-warning transition">Contato</a>
+            </nav>
+            <a href="https://wa.me/5521991152192" target="_blank" rel="noopener noreferrer" class="bg-brand-warning hover:bg-orange-700 text-white px-5 py-2.5 rounded-lg font-semibold transition shadow-md shadow-orange-500/20 text-sm flex items-center gap-2">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Solicitar Orçamento
+            </a>
+        </div>
+    </header>
+
+    <section id="inicio" class="pt-40 pb-20 md:pt-52 md:pb-32 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="bg-orange-100 text-brand-warning font-semibold tracking-wider uppercase text-xs px-3 py-1.5 rounded-full inline-block mb-4">
+                ⚠️ Segurança em Primeiro Lugar
+            </span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-brand-dark tracking-tight leading-tight mb-6">
+                Soluções Inteligentes em <span class="text-brand-warning">Acesso por Cordas</span> e Serviços em Altura.
+            </h1>
+            <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                Da manutenção industrial complexa à formação de profissionais qualificados. A E2 Serviços em Altura e Treinamento une técnica rigorosa, equipamentos de ponta e conformidade com as normas vigentes (NR-35) (ABNT NBR 15475) (ABNT NBR 15595) para minimizar os riscos.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#servicos" class="bg-brand-greenMenu hover:bg-teal-900 text-white px-8 py-3.5 rounded-xl font-medium transition shadow-lg text-center w-full sm:w-auto">
+                    Nossos Serviços
+                </a>
+                <a href="#treinamentos" class="border-2 border-slate-200 hover:border-slate-300 bg-white text-slate-700 px-8 py-3.5 rounded-xl font-medium transition text-center w-full sm:w-auto">
+                    Centro de Treinamento
+                </a>
+            </div>
+        </div>
+        <div class="relative flex justify-center">
+            <div class="w-full max-w-md bg-brand-greenMenu rounded-3xl p-8 text-white relative overflow-hidden shadow-2xl border border-teal-800">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-brand-warning/10 rounded-full blur-3xl"></div>
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <span class="text-brand-warning">●</span> Por que escolher a E2?
+                </h3>
+                <ul class="space-y-4 text-teal-100 text-sm">
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-warning font-bold">✓</span>
+                        <span>Equipe 100% certificada e qualificada para cenários críticos.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-warning font-bold">✓</span>
+                        <span>Treinamentos práticos alinhados estritamente com a NR-35 e padrões internacionais.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-warning font-bold">✓</span>
+                        <span>Equipamentos de proteção (EPIs/EPCs) com rastreabilidade e inspeção periódica de todos os equipamentos.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="bg-white py-20 px-6 border-t border-b border-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <span class="text-brand-warning font-bold text-sm tracking-widest uppercase">Operações Industriais e Prediais</span>
+                <h2 class="text-3xl font-bold text-brand-dark mt-1">Prestação de Serviços em Altura</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border border-slate-100 bg-brand-light p-6 rounded-2xl hover:shadow-xl transition group">
+                    <div class="text-3xl mb-4 group-hover:scale-110 transition-transform inline-block">🏢</div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Manutenção e Limpeza Predial</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Limpeza de fachadas envidraçadas, pintura, vedação de pastilhas e restauração estrutural externa com agilidade e segurança.</p>
+                </div>
+                <div class="border border-slate-100 bg-brand-light p-6 rounded-2xl hover:shadow-xl transition group">
+                    <div class="text-3xl mb-4 group-hover:scale-110 transition-transform inline-block">🏭</div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Montagem e Inspeção Industrial</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Inspeção por ensaios não destrutivos (END), reparos em estruturas metálicas, soldagem e tubulações em locais de difícil acesso.</p>
+                </div>
+                <div class="border border-slate-100 bg-brand-light p-6 rounded-2xl hover:shadow-xl transition group">
+                    <div class="text-3xl mb-4 group-hover:scale-110 transition-transform inline-block">⚡</div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-2">Instalações em Linha de Vida</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Projeto, instalação e certificação de linhas de vida (sistemas de ancoragem) definitivas ou temporárias para telhados e pontes rolantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="treinamentos" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-brand-warning font-bold text-sm tracking-widest uppercase">Formação de Profissionais</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">Treinamentos e Certificações de Acesso por Cordas</h2>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    Nosso Centro de Treinamento possui uma estrutura simulada completa para reproduzir com exatidão os cenários mais complexos do mercado. Nosso foco é desenvolver a autonomia técnica operacional, com domínio em sistemas de ancoragem simples e complexos, além de técnicas de resgate em altura.
+                </p>
+                
+                <p class="text-slate-600 leading-relaxed">Atendemos com excelência:</p>
+
+                <p class="text-slate-600 leading-relaxed"> 
+                    🏢 <span class="font-bold text-brand-dark">Indústrias e Empresas:</span> Garantindo conformidade com o mais alto padrão de segurança e eficiência.
+                </p>
+
+                <p class="text-slate-600 leading-relaxed">
+                    🚀 <span class="font-bold text-brand-dark">Profissionais Autônomos:</span> Preparando técnicos para os desafios reais e máxima valorização no mercado.
+                </p>
+                
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                        <span class="bg-orange-500 text-white font-bold px-2.5 py-1 rounded text-xs">NR 35</span>
+                        <p class="text-sm font-semibold text-brand-dark">Trabalho em Altura (Básico e Avançado)</p>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                        <span class="bg-slate-900 text-white font-bold px-2.5 py-1 rounded text-xs">NÍVEL 1/2/3</span>
+                        <p class="text-sm font-semibold text-brand-dark">Formação e Reciclagem em Acesso por Cordas</p>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                        <span class="bg-red-600 text-white font-bold px-2.5 py-1 rounded text-xs">RESGATE</span>
+                        <p class="text-sm font-semibold text-brand-dark">Técnicas de Resgate Vertical e Primeiros Socorros</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-br from-brand-greenMenu to-teal-950 text-white p-8 rounded-3xl space-y-6 shadow-xl relative overflow-hidden">
+                <div class="absolute -bottom-10 -right-10 text-9xl text-white/5 font-black select-none">E2</div>
+                <h3 class="text-2xl font-bold">Forme sua equipe com quem é referência</h3>
+                <p class="text-sm text-teal-100 leading-relaxed">
+                    Emitimos certificados válidos em todo o território nacional, em total conformidade com as exigências do Ministério do Trabalho.
+                </p>
+                <hr class="border-teal-900">
+                <div class="space-y-2 text-sm text-teal-200">
+                    <p>🧗🏻‍♂️ Turmas reduzidas para maior aproveitamento prático</p>
+                    <p>📕 Todo material e EPI disponível durante o treinamento</p>
+                    <p>📍 Localização de Fácil acesso</p>  
+                    <p>🍽️ Refeições inclusas</p>
+                    <p>🛌🏼 Alojamento</p>
+                    <p>🚘 Estacionamento</p> 
+                </div>
+                <a href="https://wa.me/5521991152192" target="_blank" rel="noopener noreferrer" class="block text-center bg-brand-warning hover:bg-orange-700 text-white py-3.5 rounded-xl font-bold transition shadow-lg">
+                    Consultar Próximas Turmas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="Certificações" class="bg-brand-greenMenu text-white py-16 px-6 border-t border-b border-teal-800">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="space-y-4 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold">Certificação e Parcerias</h2>
+                <p class="text-teal-100 max-w-2xl mx-auto text-sm leading-relaxed">
+                    Todas as nossas operações de Alpinismo Industrial e Acesso por Cordas seguem estritamente as diretrizes da NR-35 (Anexo I e II), NBR 15475, NBR 15595 e demais regulamentações vigentes de segurança ocupacional.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                
+                <div class="space-y-4 text-center">
+                    <span class="text-xs uppercase tracking-widest text-teal-300 font-semibold block">Empresas Credenciadas / Certificadas</span>
+                    <div class="flex flex-wrap items-center justify-center gap-4">
+                        <div class="bg-white p-4 rounded-xl shadow-lg w-[160px] h-24 flex items-center justify-center transition-transform hover:scale-105">
+                            <img src="Logo ANEAC.jpeg" alt="Logo ANEAC International" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-lg w-[160px] h-24 flex items-center justify-center transition-transform hover:scale-105">
+                            <img src="logo ICRA.jpeg" alt="Logo ICRA" class="max-w-full max-h-full object-contain">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4 text-center">
+                    <span class="text-xs uppercase tracking-widest text-teal-300 font-semibold block">Empresas Parceiras</span>
+                    <div class="flex flex-wrap items-center justify-center gap-4">
+                        <div class="bg-white p-4 rounded-xl shadow-lg w-[150px] h-24 flex items-center justify-center transition-transform hover:scale-105">
+                            <img src="Logo Civilmaster.jpeg" alt="Logo Civilmaster" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-lg w-[150px] h-24 flex items-center justify-center transition-transform hover:scale-105">
+                            <img src="Logo Granservices.jpeg" alt="Logo Granservices" class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-lg w-[150px] h-24 flex items-center justify-center transition-transform hover:scale-105">
+                            <img src="Logo Tecnosonda.jpeg" alt="Logo Tecnosonda" class="max-w-full max-h-full object-contain">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="bg-brand-light py-20 px-6">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-5 gap-12 items-start">
+            
+            <div class="md:col-span-2 space-y-6">
+                <h2 class="text-3xl font-bold text-brand-dark">Fale Conosco</h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Precisa de uma equipe técnica para um serviço complexo ou quer agendar um treinamento? Entre em contato por formulário ou diretamente pelo WhatsApp.
+                </p>
+                <div class="text-sm space-y-3 text-slate-600">
+                    <p>
+                        <strong>📞 WhatsApp:</strong> 
+                        <a href="https://wa.me/5521991152192" target="_blank" rel="noopener noreferrer" class="text-brand-warning font-semibold hover:underline">
+                            (21) 99115-2192
+                        </a>
+                    </p>
+                    <p><strong>✉️ E-mail:</strong> e2servicosaltura@gmail.com</p>
+                    <p><strong>📍 Atendimento:</strong> Horário Atendimento no CT 8:00 às 17:00 </p>
+                </div>
+            </div>
+
+            <form class="md:col-span-3 bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 space-y-4 w-full">
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Seu Nome / Empresa</label>
+                    <input type="text" placeholder="Ex: E2 Treinamento" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-brand-warning transition text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1">E-mail de Contato</label>
+                    <input type="email" placeholder="exemplo@e-mail.com" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-brand-warning transition text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1">O que você precisa?</label>
+                    <select class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-600 focus:outline-none focus:border-brand-warning transition text-sm">
+                        <option>Prestação de Serviço em Altura</option>
+                        <option>Treinamento / Certificação de Equipe</option>
+                        <option>Outros assuntos</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Mensagem</label>
+                    <textarea rows="4" placeholder="Descreva brevemente o local do serviço ou o treinamento desejado..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-brand-warning transition text-sm"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-brand-warning hover:bg-orange-700 text-white py-3.5 rounded-xl font-semibold transition shadow-lg shadow-orange-500/20 text-sm">
+                    Enviar Solicitação por E-mail
+                </button>
+                <p class="text-center text-xs text-slate-400 py-1">ou</p>
+                <a href="https://wa.me/5521991152192" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-green-600 hover:bg-green-700 text-white py-3.5 rounded-xl font-semibold transition shadow-lg text-sm flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    Conversar no WhatsApp Agora
+                </a>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- NOVA SEÇÃO: Localização inserida aqui -->
+    <section id="localizacao" class="bg-white py-12 px-6 border-t border-b border-slate-100">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <div class="space-y-2">
+                <span class="text-brand-warning font-bold text-xs tracking-widest uppercase block">Como nos encontrar</span>
+                <h2 class="text-2xl font-bold text-brand-dark">Nossa Localização</h2>
+                <p class="text-slate-600 text-sm max-w-xl mx-auto leading-relaxed">
+                    Venha conhecer a infraestrutura do nosso Centro de Treinamento. Estamos prontos para receber você e sua equipe.
+                </p>
+            </div>
+            <div>
+                <a href="https://www.google.com.br/maps/place/E2+Servi%C3%A7os+em+Altura+e+Treinamento/@-22.9082436,-43.2760838,802m/data=!3m2!1e3!4b1!4m6!3m5!1s0x997d0071286ef3:0xf6ec974e9c12d84c!8m2!3d-22.9082436!4d-43.2735089!16s%2Fg%2F11njyms2_v?hl=pt-BR&entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-2 bg-brand-greenMenu hover:bg-teal-900 text-white font-semibold px-6 py-3.5 rounded-xl transition shadow-md text-sm">
+                    <svg class="w-5 h-5 text-brand-warning" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clip-rule="evenodd" />
+                    </svg>
+                    Abrir no Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-greenMenu text-teal-200 text-xs py-8 px-6 text-center border-t border-teal-800 flex flex-col items-center gap-1">
+        <img src="logo verde.jpeg" alt="Logo E2" class="h-10 w-auto opacity-75 hover:opacity-100 transition">
+        <p> Rua Maria Antonia 141, Engenho Novo - Rio de Janeiro - RJ cep: 20710-260.</p>    
+        <p>&copy; 2026 E2 - Acesso por Cordas & Serviços em Altura. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
